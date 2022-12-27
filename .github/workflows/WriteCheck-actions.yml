@@ -1,5 +1,5 @@
 on: [pull_request]
-
+name: "typo check"
 jobs:
   WriteCheck:
     runs-on: ubuntu-latest
