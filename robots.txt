@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://junjie1475.github.io/sitemap.xml
