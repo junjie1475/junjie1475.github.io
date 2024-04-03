@@ -1,0 +1,27 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "junjie1475&#x27;s blog",
+    "description": "",
+    "home_page_url": "https://junjie1475.github.io",
+    "feed_url": "https://junjie1475.github.io/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "junjie1475"
+    },
+    "items": [
+        {
+            "id": "https://junjie1475.github.io/thoughts-on-assumptions-in-proofing-logic.html",
+            "url": "https://junjie1475.github.io/thoughts-on-assumptions-in-proofing-logic.html",
+            "title": "Thoughts on Assumptions in proofing logic.",
+            "summary": "Introduction Recently, I have been reading Calculus by Spivak, to get a better grip on the book itself I decided to learn some proof-writing first. This post is mostly my view of the topic and also serves to make things clear for me by explaining&hellip;",
+            "content_html": "\n    <h2 id=\"introduction\">\n      Introduction\n    </h2>\n\n  <p>\n    Recently, I have been reading Calculus by Spivak, to get a better grip on the book itself I decided to learn some proof-writing first. This post is mostly my view of the topic and also serves to make things clear for me by explaining it, so take it with a grain of salt.<br><br>I have been stuck on the logic for a while, and mostly on the implication connectives. I have learned that most of the statement to be proven is written up in the form of P(x)⇒Q(x). Also as a reminder, the ultimate goal is to prove that the statement is true. Before getting into the idea, I will give a review of the basic concept first.\n  </p>\n<hr class=\"separator separator--dots\" />\n\n    <h2 id=\"open-sentence-vs-statement\">\n      Open Sentence V.S Statement\n    </h2>\n\n  <p>\n    Here are some examples of open sentences:\n  </p>\n\n  <ul>\n    <li>x is an odd number</li><li>x &gt; 5</li><li>x + y = 10</li>\n  </ul>\n\n  <p>\n    Note that those are not a statement because their truth values depend on the variable x, so the only way to make sense of them is to replace the variable x with an object in the domain(The set that x can be chosen from). Only then it has become a statement. However, it's important to be aware that a statement doesn't need to have without a variable, for example, x=x, this statement doesn't depend on the variable x, or rephrase it in another way, for all x chosen from the domain of the statement, the truth value of those statements is the same.\n  </p>\n\n    <h2 id=\"proofing-statements\">\n      Proofing statements\n    </h2>\n\n  <p>\n    Let's look at the proofing of some simpler statements before getting into conditional connectives.\n  </p>\n\n  <p>\n    A ∧ B, According to the truth table to prove it's true, you need to prove that statement A is true and statement B is true.<br><br>A ∨ B, There are three possible combinations of the truth value of A and B, so to prove it's sufficient to prove that either A is true or B is true\n  </p>\n\n  <p>\n    Now, we can begin the proof of implications. There are two types of implication statements, one is with the form P⇒Q, while another is constructed from open sentences with the form ∀x∈S, P(x)⇒Q(x).<br><br>We first discuss the proof on the P⇒Q. (An example of this kind is, if 3 is odd, then 3+2 is odd)<br>Looking at the truth table, there are three possible combinations of the truth values of the P and Q:<br>1. P is true and Q is true.<br>2. P is false and Q is true.<br>3. P is false and Q is false.<br>Hence, we can prove it by either proofing or disproofing P. In the first case, we need to prove the statement Q is also true. However, in the latter case, the statement is true whenever Q is true or false, so proof is not required on B.<br><br>Now we proof the form ∀x∈S, P(x)⇒Q(x):<br>(Example ∀x in the integer set, if x is odd, then x + 2 is also odd)<br>Expanding this statement, it is equivalent to the form P(x1)⇒Q(x1) ∧ P(x2)⇒Q(x2) ∧ ... ∧ P(xn)⇒Q(xn). Knowing this you can prove it by showing all the statements are true, however, this is difficult(or impossible) due to the number of steps required. By looking at the statement more carefully you can observe that P(xi)⇒Q(xi) can be grouped into two groups, one is the group that P(xi) is true and another is false. Now the problem has been broken down into proving the true group(P(xi) is true) is true and the false group(P(xi) is false) is true. By doing so, we effectively assume that P(x) is either true or false. Thus, you can just follow the step above, assuming that P(x) is true, and deduce from that statement until you have reached the truthiness of Q(x). (You don't have to deduce on the false group(P(x) is false) because, from the truth table, we can see that the truth of Q(x) doesn't affect the truthiness of the statement if P(x) is false).\n  </p>\n<hr class=\"separator separator--dots\" />\n\n    <h2 id=\"the-end\">\n      The End\n    </h2>\n\n  <p>\n    <br>Again, the purpose of this post is to share my two cents on the topic of mathematical logic, so there might be parts that my understanding is incorrect; Thus read the text with this information in mind. See you next time.\n  </p>",
+            "author": {
+                "name": "junjie1475"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-04-03T16:45:36+08:00",
+            "date_modified": "2024-04-03T16:45:36+08:00"
+        }
+    ]
+}
