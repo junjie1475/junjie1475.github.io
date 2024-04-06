@@ -3,5 +3,5 @@
 	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
 [submodule "themes/hugo-theme-stack"]
 	path = themes/hugo-theme-stack
-	url = git@github.com:junjie1475/junjie1475.github.io.git
-
+	url = git@github.com:junjie1475/hugo-theme-stack.git
+	ignore = dirty
